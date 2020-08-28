@@ -10,15 +10,15 @@ export const Container = styled.div`
 
 export const Info = styled.div`
     width: 100%;
-    max-width: 400px;
-    margin: 10 0 0 0;
+    max-width: 380px;
+    margin: 10 10 10 10;
     background: #FFF;
     border-radius: 4px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     font-size: 10px;
 
     h3 {
@@ -27,14 +27,15 @@ export const Info = styled.div`
         padding: 10px;
         text-align: center;
         border-radius: 10px;
+        width: 100%;
     }
 
 `
 
 export const Content = styled.div`
     width: 100%;
-    max-width: 400px;
-    margin: 30px;
+    max-width: 380px;
+    margin: 10px;
     background: #FFF;
     border-radius: 4px;
     padding: 20px;
