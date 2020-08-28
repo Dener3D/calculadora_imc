@@ -6,16 +6,17 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 `;
 
 
 
 export const Content = styled.div`
     width: 100%;
-    max-width: 380px;
-    margin: 10px;
+    max-width: 400px;
+    position: absolute;
+
     background: #FFF;
-    position: fixed;
     border-radius: 4px;
     padding: 20px;
     display: flex;
@@ -42,7 +43,7 @@ export const Info = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
     
     
     h3 {
