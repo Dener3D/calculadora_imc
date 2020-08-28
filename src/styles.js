@@ -72,6 +72,14 @@ export const Entrada = styled.input`
     font-size: 20px;
     text-align: center;
     border: none;
+    &:hover{
+        border: solid 2px #adffee;
+    }
+
+    &:focus{
+        border: solid 2px #ffc773;
+    }
+    
 `;
 
 export const Button = styled.button`
@@ -83,7 +91,12 @@ export const Button = styled.button`
     padding: 10px;
     font-weight: bold;
     margin-left: 10px;
-    background: ${props => `${props.mainColor}`}
+    &:hover{
+        border: solid 2px #adffee;
+    }
+
+    background: ${props => `${props.mainColor}`} 
+
     
     
 `;
