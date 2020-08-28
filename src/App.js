@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import GlobalStyle from './global';
-import { Container, Content, Info, EntradaContainer, Entrada, Button, Mensagem } from './styles';
+import { Container, Content, EntradaContainer, Entrada, Button, Mensagem } from './styles';
 import logo from './assets/logo.png';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
  const [total, setTotal] = useState("");
  const [mensagem, setMensagem] = useState("");
  const [mainColor, setColor] = useState("red");
+ const [borderColor, setBorderColor] = useState("red");
  var y = 0.0;
  var z = 0.0;
 
@@ -30,6 +31,7 @@ function App() {
 
     if (document.querySelectorAll('.altura')[0].value === "" || document.querySelectorAll('.peso')[0].value === ""){
       setTotal("Preencha todos os campos!");
+      setBorderColor("red");
     }
     
     else{
@@ -76,15 +78,15 @@ function App() {
 
     <h2>{total}</h2>
     <Mensagem mainColor={mainColor} > {mensagem}</Mensagem>
-    </Content>
-    <Info>
-      <h3>MENOR QUE 18,5        -     MAGREZA</h3>
+
+    
+      <h3 borderColor={borderColor}>MENOR QUE 18,5        -     MAGREZA</h3>
       <h3>ENTRE 18,5 E 24,9     -     NORMAL</h3>
       <h3>ENTRE 25,0 E 29,9     -     SOBREPESO</h3>
       <h3>ENTRE 30,0 E 39,9     -     OBESIDADE</h3>
       <h3>MAIOR QUE 40,0        -     OBESIDADE GRAVE</h3>
-
-    </Info>
+    </Content>
+ 
     <GlobalStyle />
   </Container>
 }

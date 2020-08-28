@@ -8,29 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Info = styled.div`
-    width: 100%;
-    max-width: 380px;
-    margin: 10 10 10 10;
-    background: #FFF;
-    border-radius: 4px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
 
-    h3 {
-        margin: 10px;
-        background-color: #d1f8ff;
-        padding: 10px;
-        text-align: center;
-        border-radius: 10px;
-        width: 100%;
-    }
-
-`
 
 export const Content = styled.div`
     width: 100%;
@@ -52,6 +30,18 @@ export const Content = styled.div`
     h4 {
         margin-top: 10px;
         
+    }
+
+    h3 {
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 12px;
+        border: solid 1px;
+        background-color: #338763;
+        color: #FFF;
     }
 `;
 
