@@ -57,7 +57,7 @@ function App() {
     
     <Content>
 
-  <img src={logo} alt="logo-image"></img>
+  <img src={logo} alt="logo"></img>
 
   <EntradaContainer>
     <label>Altura:</label>
