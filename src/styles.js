@@ -15,7 +15,7 @@ export const Content = styled.div`
     max-width: 380px;
     margin: 10px;
     background: #FFF;
-    position: absolute;
+    position: fixed;
     border-radius: 4px;
     padding: 20px;
     display: flex;
@@ -41,17 +41,16 @@ export const Info = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    bottom: 20px;
     width: 100%;
-    max-width: 380px;;
+    max-width: 380px;
+    
     
     h3 {
         padding: 10px;
         text-align: center;
-        margin-top: 10px;
+        margin: 10px;
         border-radius: 5px;
-        font-size: 12px;
-        border: solid 1px;
+        font-size: 11px;
         background-color: #338763;
         color: #FFF;
     }
