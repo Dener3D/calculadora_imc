@@ -15,6 +15,7 @@ export const Content = styled.div`
     max-width: 380px;
     margin: 10px;
     background: #FFF;
+    position: absolute;
     border-radius: 4px;
     padding: 20px;
     display: flex;
@@ -32,12 +33,23 @@ export const Content = styled.div`
         
     }
 
+    
+`;
+
+export const Info = styled.div`
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 20px;
+    width: 100%;
+    max-width: 380px;;
+    
     h3 {
-        margin-top: 10px;
         padding: 10px;
         text-align: center;
+        margin-top: 10px;
         border-radius: 5px;
-        width: 100%;
         font-size: 12px;
         border: solid 1px;
         background-color: #338763;

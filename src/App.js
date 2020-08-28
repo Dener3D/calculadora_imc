@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import GlobalStyle from './global';
-import { Container, Content, EntradaContainer, Entrada, Button, Mensagem } from './styles';
+import { Container, Content, Info, EntradaContainer, Entrada, Button, Mensagem } from './styles';
 import logo from './assets/logo.png';
 
 function App() {
@@ -79,12 +79,13 @@ function App() {
     <h2>{total}</h2>
     <Mensagem mainColor={mainColor} > {mensagem}</Mensagem>
 
-    
+    <Info>
       <h3 borderColor={borderColor}>MENOR QUE 18,5        -     MAGREZA</h3>
       <h3>ENTRE 18,5 E 24,9     -     NORMAL</h3>
       <h3>ENTRE 25,0 E 29,9     -     SOBREPESO</h3>
       <h3>ENTRE 30,0 E 39,9     -     OBESIDADE</h3>
       <h3>MAIOR QUE 40,0        -     OBESIDADE GRAVE</h3>
+      </Info>
     </Content>
  
     <GlobalStyle />
