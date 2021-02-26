@@ -5,6 +5,8 @@
 
 <img src="https://github.com/Dener3D/calculadora_imc/blob/master/Images/imc.PNG" />
 
+link da aplicação: https://imccalculator.netlify.app/
+
 
 
 
